@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/responsiveslides.css?v=1.5">
+  <link rel="stylesheet" href="css/style.css?v=1.5">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="javascript/responsiveslides.min.js?v=1.6"></script>
+  <script>
+    $(function () {
+      $("#slider1").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "centered-btns",
+		maxwidth: "1024"
+      });
+    });
+  </script>
+</head>
+<body background="img/background.png">
+<div id="general">
+	<div id="cabecera">
+		<div id="cabecera-sup">
+			<div>
+			LOGO
+			</div>
+			<div>
+				<ul id="categorias">
+					<li>Home</li>
+					<li>Categoria</li> 
+					<li>Proyectos</li> 
+					<li>Quienes somos</li> 
+				</ul>
+			</div>			
+		</div>
+		<div id="cabecera-inf">
+		
+			<!-- Slideshow 1 -->
+			<div class="rslides_container">
+			  <ul class="rslides" id="slider1">
+				<li>
+					<img src="img/1.png" alt="">
+					<p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
+				</li>
+				<li>
+					<img src="img/2.png" alt="">
+					<p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
+				</li>
+				<li>
+					<img src="img/4.png" alt="">
+					<p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
+				</li>
+			  </ul>
+			</div>
+			
+		</div>
+	</div>
+	<br style="clear: both;">
+	<div id="cuerpo">	
+		<p>CUERPO</p>
+		<p>Etiam dignissim bibendum finibus. Nulla iaculis suscipit metus. Fusce elementum sed velit et fermentum. In consectetur imperdiet nulla, vel aliquam neque egestas non. Pellentesque erat metus, fermentum in suscipit at, finibus vitae eros. Etiam vel nibh velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam scelerisque libero leo, quis suscipit velit faucibus at. Pellentesque consequat viverra turpis, molestie imperdiet magna malesuada vitae.
+		</p>---------------------------------------------------------------------------------------------------------------------------------------------------------
+	</div>
+	
+	<!-- Pie de la página -->
+	<div id="pie">
+		<p>PIE</p>
+		<p>Nunc vel dignissim ligula. Sed tristique placerat diam ut rhoncus. Aenean maximus sollicitudin faucibus. Suspendisse aliquam turpis neque, in laoreet lorem tincidunt vitae. Donec volutpat ex mauris, vel tincidunt leo lobortis et. Nunc egestas iaculis eros in placerat. Phasellus mattis ex nec sem rutrum, quis vulputate sem blandit. Donec nisl nisi, tempor in quam a, venenatis lobortis justo. Nam eu arcu lorem. Cras at eros at erat elementum porta sit amet eu sapien. Aliquam consequat mauris in neque placerat, eget malesuada ligula egestas. Fusce et tincidunt tortor, in iaculis eros. Maecenas quam felis, varius ut elit vitae, tristique sollicitudin est. Duis imperdiet euismod tortor, ut ultricies lacus convallis vel. Sed eu leo dignissim mauris lacinia dictum.
+	</div>
+</div>
+  
+</body>
+</html>
