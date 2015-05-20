@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="javascript/responsiveslides.js"></script>
+<script src="./javascript/countries.js"></script>
+<script src="./javascript/comprobar.js"></script>
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+</script>
+</head>
+<body background="img/background.png">
+<div id="general">
+	<!-- Cabecera de la página -->
+	<div id="cabecera">
+		<div id="cabecera-sup">
+			<div>
+			LOGO COMPRAR
+			</div>
+			<div>
+				<ul id="categorias">
+					<li href="index.html">Home</li>
+					<li>Categoria</li> 
+					<li>Proyectos</li> 
+					<li>Quienes somos</li> 
+					<a HREF="comprar.html">Comprar</a> 
+				</ul>
+			</div>			
+		</div>
+	</div>		
+	<br style="clear: both;">
+	<!-- Cuerpo de la página -->
+	<div id="cuerpo">	
+		<form name="frmContacto" method="post" action="enviar_correo.php">
+			<table width="500px">
+				<tr>
+					<td>
+						<label for="first_name">Nombre: *</label>
+					</td>
+					<td>
+						<input type="text" name="first_name" maxlength="50" size="25">
+					</td>
+				</tr>
+					<tr>
+					<td valign="top"">
+						<label for="last_name">Apellido: *</label>
+					</td>
+					<td>
+						<input type="text" name="last_name" maxlength="50" size="25">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="email">Dirección de E-mail: *</label>
+					</td>
+					<td>
+						<input type="text" name="email" maxlength="80" size="35">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="telephone">Número de teléfono:</label>
+					</td>
+					<td>
+						<input type="text" name="telephone" maxlength="25" size="15">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="comments">Comentarios: *</label>
+					</td>
+					<td>
+						<textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:right">
+						<input type="submit" value="Enviar">
+					</td>
+			</tr>
+			</table>
+		</form>
+	
+	
+		
+	</div>
+	<!-- Pie de la página -->
+	<div id="pie">
+		<p>LETRA PEQUEÑA</p>
+		<p>Nunc vel dignissim ligula. Sed tristique placerat diam ut rhoncus. Aenean maximus sollicitudin faucibus. Suspendisse aliquam turpis neque, in laoreet lorem tincidunt vitae. Donec volutpat ex mauris, vel tincidunt leo lobortis et. Nunc egestas iaculis eros in placerat. Phasellus mattis ex nec sem rutrum, quis vulputate sem blandit. Donec nisl nisi, tempor in quam a, venenatis lobortis justo. Nam eu arcu lorem. Cras at eros at erat elementum porta sit amet eu sapien. Aliquam consequat mauris in neque placerat, eget malesuada ligula egestas. Fusce et tincidunt tortor, in iaculis eros. Maecenas quam felis, varius ut elit vitae, tristique sollicitudin est. Duis imperdiet euismod tortor, ut ultricies lacus convallis vel. Sed eu leo dignissim mauris lacinia dictum.
+	</div>
+</div>
+</body>
+</html>

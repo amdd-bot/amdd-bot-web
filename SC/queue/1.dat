@@ -1,0 +1,17 @@
+## miniRelay Server Mail File (Type 1.01) ##
+1
+amdd.bot@gmail.com
+Original
+Received: from localhost ([127.0.0.1]) by 
+          localhost (miniRelay v0.9.77d) 
+          with SMTP id F1GXIJKA; Wed, 20 May 2015 20:23:08 -0100
+Date: Wed, 20 May 2015 20:23:08 +0200
+Subject: asunto del mensaje
+To: amdd.bot@gmail.com
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: first_name<email>
+
+cuerpo del mensaje: comments
+.
+
