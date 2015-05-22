@@ -80,7 +80,7 @@
 							
 							<div style="margin-bottom: 31px;">
 								<label for="phone" accesskey="P">Numero de telefono: <span style="color: red;">*</span></label>
-								<input name="phone" type="text" size="35" id="information_phone" value="">
+								<input name="phone" type="text" size="35" id="information_phone" pattern="[6-9]{1}[0-9]{8}|[6-9]{1}[0-9]{9}" value="">
 							</div>							
 
 							<div style="margin-bottom: 31px;">
@@ -108,7 +108,7 @@
 
 							<div style="margin-bottom: 15px;">
 								<label for="zip" accesskey="Z">Codigo Postal: <span style="color: red;">*</span></label>
-								<input name="zip" type="text" size="35" id="information_zip" value="">
+								<input name="zip" type="text" size="35" id="information_zip" pattern="^\d{5}(?:[-\s]\d{4})?$" value="">
 							</div>								
 							
 							<div style="margin-bottom: 15px;">
