@@ -7,26 +7,32 @@
 .imgQuienesSomos{  /*hijos*/
 	float: left;
 	width: 25%;
-	height: 30%;
+	height: 33%;
+	line-height: 0px;
+	color: transparent; font-size: 20px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
-.imgQuienesSomos div{  
-	width: 95%;
-	height: 95%;
-	margin-top: 0px;
-	-webkit-transition: margin 1s ease;
-    -moz-transition: margin 1s ease;
-    -o-transition: margin 1s ease;
-    -ms-transition: margin 1s ease;
-    transition: margin 3s ease;
+.imgQuienesSomos:hover {
+	line-height: 50px;
+	color: #575858;
 }
- 
-.imgQuienesSomos div:hover {
-	margin-top: -230px;
+.imgQuienesSomos img {
+	margin: 0 0px;
+	width: 100%;
 }
 
-
+.logos{
+	float: center;
+}
 .logos img{  
+	float: left;
 	width: 50px;
 	height: 50px;
 }
