@@ -1,0 +1,32 @@
+#marcoImagenes{  /*padre*/
+	overflow: hidden;
+	width: 100%; 
+	float: center;
+	background-color: #b9b4b1;
+}
+.imgQuienesSomos{  /*hijos*/
+	float: left;
+	width: 25%;
+	height: 30%;
+}
+
+.imgQuienesSomos div{  
+	width: 95%;
+	height: 95%;
+	margin-top: 0px;
+	-webkit-transition: margin 1s ease;
+    -moz-transition: margin 1s ease;
+    -o-transition: margin 1s ease;
+    -ms-transition: margin 1s ease;
+    transition: margin 3s ease;
+}
+ 
+.imgQuienesSomos div:hover {
+	margin-top: -230px;
+}
+
+
+.logos img{  
+	width: 50px;
+	height: 50px;
+}
