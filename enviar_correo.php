@@ -6,6 +6,14 @@ $mail = new PHPMailer;
 //Creamos una instancia en lugar usar mail()
 $correo = new PHPMailer(); 
 
+//obtenemos los datos del POST
+$nombre = $_POST['first_name'];
+$apellidos = $_POST['last_name'];
+$correoMenda = $_POST['email'];
+$telef= $_POST['telephone'];
+$coment = $_POST['comments'];
+
+
 //Le decimos al script que utilizaremos SMTP
 $correo->IsSMTP();
  
@@ -34,16 +42,16 @@ $correo->Username   = "amdd.bot@gmail.com";
 $correo->Password   = "a005m001d001d007";
 
 //Usamos el SetFrom para decirle al script quien envia el correo
-$correo->SetFrom("me@micodigophp.com", "Mi Codigo PHP");
+$correo->SetFrom($correoMenda, "Prueba");
  
 //Usamos el AddReplyTo para decirle al script a quien tiene que responder el correo
-$correo->AddReplyTo("me@micodigophp.com","Mi Codigo PHP");
+$correo->AddReplyTo($correoMenda,"Enviar un reply a este correo");
  
 //Usamos el AddAddress para agregar un destinatario
-$correo->AddAddress("destino@correo.com", "Robot");
+$correo->AddAddress("amdd.bot@gmail.com", "para mi");
  
 //Ponemos el asunto del mensaje
-$correo->Subject = "Mi primero correo con PHPMailer";
+$correo->Subject = "Quiero ponerme en contacto";
  
 /* 
  //* Si deseamos enviar un correo con formato HTML utilizaremos MsgHTML:
@@ -53,8 +61,8 @@ $correo->Subject = "Mi primero correo con PHPMailer";
  * $correo->IsHTML(false);
  * $correo->Body = "Mi mensaje en Texto Plano";
  */
-$correo->MsgHTML("Mi Mensaje en <strong>HTML</strong>");
- 
+$correo->MsgHTML(false);
+$correo->Body = $coment; 
 //Si deseamos agregar un archivo adjunto utilizamos AddAttachment
 //$correo->AddAttachment("images/phpmailer.gif");
  
