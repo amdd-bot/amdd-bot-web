@@ -16,10 +16,6 @@ body
 	box-shadow: 0px 0px 10px #000000;
 
 }
-#cabecera
-{
-	height: 440px;
-}
 #cabecera-sup{
 	height: 60px;
     margin: 0 auto;
@@ -34,6 +30,7 @@ body
   }
 #pie
 {
+	height: 280px;
 	padding: 30px;
 	border-top: 1px solid #ececec;
 	background-color: #F6F6F6;
@@ -43,6 +40,21 @@ body
 #contenido-pie
 {
   position: relative;
+}
+#logo-pie
+{
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#detalles-pie
+{
+	width: 220px;
+	float: left;
+	display: inline;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .rslides {
   margin: 0 auto;
