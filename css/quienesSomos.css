@@ -3,6 +3,7 @@
 	width: 100%; 
 	float: center;
 	background-color: #b9b4b1;
+	border-radius: 25px;
 }
 .imgQuienesSomos{  /*hijos*/
 	float: left;
@@ -26,6 +27,7 @@
 .imgQuienesSomos img {
 	margin: 0 0px;
 	width: 100%;
+	border-radius: 25px;
 }
 
 .logos{
@@ -33,6 +35,6 @@
 }
 .logos img{  
 	float: left;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 }
