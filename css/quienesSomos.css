@@ -18,11 +18,15 @@
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+	-webkit-filter: grayscale(100%);
+	opacity: 0.5; 
 }
 
 .imgQuienesSomos:hover {
 	line-height: 50px;
 	color: #575858;
+	opacity: 1;
+	-webkit-filter: grayscale(0%);
 }
 .imgQuienesSomos img {
 	margin: 0 0px;
