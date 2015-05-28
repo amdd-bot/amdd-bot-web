@@ -52,6 +52,7 @@ body
 #detalles-pie
 {
 	width: 280px;
+	height: 200px;
 	float: left;
 	display: inline;
 	margin-left: 10px;
@@ -60,18 +61,7 @@ body
 #lista-detalles
 {
   list-style: none outside;
-  height: 18px;
-
-}
-.simbolo
-{
-	height: 14px;
-	line-height: 14px;	
-	width: 14px;
-	background-image: url(img/glyphicons.png);
-    background-position: -72px 0;
-	background-repeat: no-repeat;
-    vertical-align: top;
+  padding: 10px;
 }
 
 .rslides {
@@ -219,4 +209,5 @@ body
   background: #000;
   background: rgba(0,0,0, .8);
   color: #fff;
+  margin: 0px;
 }
