@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="javascript/responsiveslides.js"></script>
-<script src="./javascript/countries.js"></script>
-<script src="./javascript/comprobar.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/menu.css" media="screen" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="javascript/responsiveslides.js"></script>
+	<script src="./javascript/countries.js"></script>
+	<script src="./javascript/comprobar.js"></script>
 <script>
   $(function() {
     $(".rslides").responsiveSlides();
@@ -16,27 +22,46 @@
 <div id="general">
 	<!-- Cabecera de la página -->
 	<div id="cabecera">
-		<div id="cabecera-sup">
-			<div>
-			LOGO COMPRAR
-			</div>
-			<div>
-				<ul id="categorias">
-					<li href="index.html">Home</li>
-					<li>Categoria</li> 
-					<li>Proyectos</li> 
-					<li>Quienes somos</li> 
-					<a HREF="comprar.html">Comprar</a> 
-				</ul>
-			</div>			
+		<div id="cabecera-sup"> 		
+			<ul class="nav">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Servicios</a>
+					<ul>
+						<li><a href="">Submenu1</a></li>
+						<li><a href="">Submenu2</a></li>
+						<li><a href="">Submenu3</a></li>
+						<li><a href="">Submenu4</a>
+							<ul>
+								<li><a href="">Submenu1</a></li>
+								<li><a href="">Submenu2</a></li>
+								<li><a href="">Submenu3</a></li>
+								<li><a href="">Submenu4</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Acerca de</a>
+					<ul>
+						<li><a href="">Submenu1</a></li>
+						<li><a href="">Submenu2</a></li>
+						<li><a href="">Submenu3</a></li>
+						<li><a href="">Submenu4</a></li>
+					</ul>
+				</li>
+				<li><a href="">Contacto</a></li>
+			</ul>
 		</div>
+		<div id="cabecera-inf">
+		</div>
+
+		
+		
 	</div>		
 	<br style="clear: both;">
 	<!-- Cuerpo de la página -->
 	<div id="cuerpo">
 		<h2>Localizanos en</h2>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11609.17292208921!2d-2.9781635121676495!3d43.3290526967222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e5b02f7a785bf%3A0x9a217c9d1cd7ecd0!2sUniversidad+del+Pa%C3%ADs+Vasco!5e0!3m2!1ses!2ses!4v1432284691723" width="640" height="256" frameborder="0" style="border:0"></iframe>
-		
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.0959407283176!2d-2.0097150000000203!3d43.312250999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b0757e7e2321%3A0x3588bad19acd6822!2sUPV+-+Campus+de+Gipuzkoa!5e0!3m2!1ses!2ses!4v1432286307494" width="640" height="256" frameborder="0" style="border:0"></iframe>		
 		<h2>Para contactar rellena el siguiente formulario</h2>
 
 		<form name="frmContacto" method="post" action="enviar_correo.php">
@@ -93,9 +118,29 @@
 		
 	</div>
 	<!-- Pie de la página -->
-	<div id="pie">
-		<p>LETRA PEQUEÑA</p>
-		<p>Nunc vel dignissim ligula. Sed tristique placerat diam ut rhoncus. Aenean maximus sollicitudin faucibus. Suspendisse aliquam turpis neque, in laoreet lorem tincidunt vitae. Donec volutpat ex mauris, vel tincidunt leo lobortis et. Nunc egestas iaculis eros in placerat. Phasellus mattis ex nec sem rutrum, quis vulputate sem blandit. Donec nisl nisi, tempor in quam a, venenatis lobortis justo. Nam eu arcu lorem. Cras at eros at erat elementum porta sit amet eu sapien. Aliquam consequat mauris in neque placerat, eget malesuada ligula egestas. Fusce et tincidunt tortor, in iaculis eros. Maecenas quam felis, varius ut elit vitae, tristique sollicitudin est. Duis imperdiet euismod tortor, ut ultricies lacus convallis vel. Sed eu leo dignissim mauris lacinia dictum.
+ 	<div id="pie">
+		<div id="contenido-pie">
+			<div id="logo-pie">
+				<h2> LOGO </h2>
+				<p>Etiam dignissim bibendum finibus. Nulla iaculis suscipit metus. Fusce elementum sed velit et fermentum. In consectetur imperdiet nulla, vel</p>
+			</div>
+			<div id="detalles-pie">
+				<h4>Detalles de contacto</h4>
+				<ul id="lista-detalles">
+					<li>					
+						<p><span class="glyphicon glyphicon-map-marker"></span> &nbsp;<b>Ubicación:</b> San Sebastián</p>
+					</li>
+					<li>					
+						<p><span class="glyphicon glyphicon-earphone"></span> &nbsp;<b>Teléfono:</b> 987 65 43 32</p>
+					</li>
+					<li>					
+						<p><span class="glyphicon glyphicon-envelope"></span> &nbsp;<b>Email:</b> <a href="mailto:amdd.bot@gmail.com">amdd.bot@gmail.com</a></p>
+					</li>
+				</ul>
+			</div>
+			<div id="twitter-pie">
+			</div>
+		</div>
 	</div>
 </div>
 </body>
